@@ -11,5 +11,4 @@ public class DaytrackApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DaytrackApplication.class, args);
 	}
-
 }

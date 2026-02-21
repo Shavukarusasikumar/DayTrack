@@ -13,7 +13,7 @@ public class DailyReminderScheduler {
 	private final JDA jda;
 	private final DiscordEventListener listener;
 
-	@Scheduled(cron = "${REMINDER_CRON:0 30 9 * * ?}", zone = "Asia/Kolkata")
+	@Scheduled(cron = "${REMINDER_CRON:0 30 9 ? * MON-SAT}", zone = "Asia/Kolkata")
 	public void sendDailyReminder() {
 
 		jda.getGuilds().forEach(guild -> {
